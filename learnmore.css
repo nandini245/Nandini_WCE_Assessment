@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px; /* Base font size for scaling */
+}
+
+header {
+    background: linear-gradient(90deg, #853041 0%, #ff7575 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.75rem; /* Responsive font size */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.75rem; /* Responsive font size */
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem; /* Responsive spacing */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.3125rem 0.625rem; /* Responsive padding */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.login-signup {
+    margin-left: 1.25rem; /* Responsive spacing */
+}
+
+.login-signup a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.3125rem 0.625rem; /* Responsive padding */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.login-signup a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0.625rem 0; /* Responsive padding */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 0.625rem 0; /* Responsive spacing */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .icons {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    .menu-icon {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    .nav-links a, .login-signup a {
+        font-size: 1rem; /* Smaller font size for small screens */
+    }
+}
+
+/* About Us Section Styles */
+.about-section {
+    padding: 3.75rem 1.25rem; /* Responsive padding */
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 1.25rem; /* Responsive spacing */
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-info, .about-image {
+    flex: 1;
+    min-width: 280px;
+    margin: 1.25rem; /* Responsive spacing */
+}
+
+.about-info {
+    text-align: left;
+}
+
+.about-info h3 {
+    font-size: 1.5rem; /* Responsive font size */
+    margin-top: 1.25rem; /* Responsive spacing */
+    color: #b35b6d;
+}
+
+.about-info p {
+    font-size: 1.1rem; /* Responsive font size */
+    line-height: 1.6;
+    margin-top: 0.625rem; /* Responsive spacing */
+    color: #333;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.25rem; /* Responsive spacing */
+}
+
+.team-member {
+    flex: 1;
+    max-width: 200px;
+    margin: 1.25rem; /* Responsive spacing */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.625rem; /* Responsive spacing */
+}
+
+.team-member h4 {
+    font-size: 1.2rem; /* Responsive font size */
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem; /* Responsive font size */
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info, .about-image {
+        min-width: auto;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+}
+
+/* Additional Responsive Styling for About Section */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2.5rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .about-section h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-info h3 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-info p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .team-member h4 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .team-member p {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+}
