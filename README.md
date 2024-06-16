@@ -25,8 +25,6 @@ This project is a simple website developed for a small business specializing in 
 3. **Responsiveness:**
    - Ensured that the website layout adjusts appropriately for different screen sizes (desktop, tablet, mobile).
 
-4. **Bonus Task (Optional):**
-   - Implemented a simple image slider for the featured section, allowing users to scroll through multiple product images.
 
 ## How to Run
 
