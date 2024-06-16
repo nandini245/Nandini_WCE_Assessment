@@ -150,7 +150,7 @@ nav {
     align-items: flex-start;
 }
 
-.about-info, .about-image {
+.about-info{
     flex: 1;
     min-width: 280px;
     margin: 1.25rem; /* Responsive spacing */
@@ -215,7 +215,7 @@ nav {
         align-items: center;
     }
 
-    .about-info, .about-image {
+    .about-info {
         min-width: auto;
     }
 
@@ -250,3 +250,31 @@ nav {
         font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
 }
+
+.about-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-image {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-image {
+                padding: 5px;
+            }
+        }
