@@ -150,7 +150,7 @@ nav {
     align-items: flex-start;
 }
 
-.about-info {
+.about-info, .about-image {
     flex: 1;
     min-width: 280px;
     margin: 1.25rem; /* Responsive spacing */
@@ -215,7 +215,7 @@ nav {
         align-items: center;
     }
 
-    .about-info {
+    .about-info, .about-image {
         min-width: auto;
     }
 
